@@ -1,109 +1,55 @@
-<svg width="1100" height="520" viewBox="0 0 1100 520" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="1100" height="650" viewBox="0 0 1100 650" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1100" y2="520" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#020617"/>
-      <stop offset="0.5" stop-color="#0f172a"/>
-      <stop offset="1" stop-color="#020617"/>
-    </linearGradient>
-    <linearGradient id="cyan" x1="0" y1="0" x2="1" y2="1">
-      <stop stop-color="#22d3ee"/>
-      <stop offset="1" stop-color="#6366f1"/>
-    </linearGradient>
-    <linearGradient id="rust" x1="0" y1="0" x2="1" y2="0">
-      <stop stop-color="#ff6b35"/>
-      <stop offset="1" stop-color="#f59e0b"/>
-    </linearGradient>
-    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
-      <feGaussianBlur stdDeviation="4" result="blur"/>
-      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
-    <style>
-      .title { font: 800 30px 'Segoe UI', Arial, sans-serif; fill: #f8fafc; }
-      .subtitle { font: 500 14px 'Segoe UI', Arial, sans-serif; fill: #94a3b8; }
-      .label { font: 700 17px 'Segoe UI', Arial, sans-serif; fill: #e5e7eb; }
-      .small { font: 600 12px 'Segoe UI', Arial, sans-serif; fill: #94a3b8; letter-spacing: .4px; }
-      .chip { font: 700 13px 'Segoe UI', Arial, sans-serif; fill: #dbeafe; }
-      .pct { font: 800 14px 'Segoe UI', Arial, sans-serif; fill: #67e8f9; }
-      .dash { stroke-dasharray: 8 10; animation: dash 8s linear infinite; }
-      .pulse { animation: pulse 2.8s ease-in-out infinite; transform-origin: center; }
-      .float { animation: float 4.5s ease-in-out infinite; }
-      .bar { transform-origin: left center; animation: grow 1.8s ease-out forwards; }
-      @keyframes dash { to { stroke-dashoffset: -120; } }
-      @keyframes pulse { 0%,100% { opacity:.65; } 50% { opacity:1; } }
-      @keyframes float { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-7px); } }
-      @keyframes grow { from { transform: scaleX(.15); opacity:.5;} to { transform: scaleX(1); opacity:1;} }
-    </style>
+    <linearGradient id="bg" x1="0" y1="0" x2="1100" y2="650" gradientUnits="userSpaceOnUse"><stop stop-color="#020617"/><stop offset="0.45" stop-color="#071225"/><stop offset="1" stop-color="#030712"/></linearGradient>
+    <linearGradient id="cyan" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#22d3ee"/><stop offset="1" stop-color="#3b82f6"/></linearGradient>
+    <linearGradient id="rust" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#f97316"/><stop offset="1" stop-color="#f59e0b"/></linearGradient>
+    <linearGradient id="purple" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#8b5cf6"/><stop offset="1" stop-color="#ec4899"/></linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#22d3ee" stop-opacity="0.75"/><stop offset="0.55" stop-color="#3b82f6" stop-opacity="0.25"/><stop offset="1" stop-color="#020617" stop-opacity="0"/></radialGradient>
+    <filter id="blurGlow" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <style>.title{font:800 30px 'Segoe UI',Arial,sans-serif;fill:#f8fafc}.sub{font:600 12px 'Segoe UI',Arial,sans-serif;fill:#94a3b8;letter-spacing:.2px}.head{font:800 17px 'Segoe UI',Arial,sans-serif;fill:#e2e8f0}.label{font:800 14px 'Segoe UI',Arial,sans-serif;fill:#f8fafc}.note{font:700 11px 'Segoe UI',Arial,sans-serif;fill:#93c5fd}.chip{font:800 10.5px 'Segoe UI',Arial,sans-serif;fill:#e5e7eb;letter-spacing:.45px}.chip2{font:800 9.8px 'Segoe UI',Arial,sans-serif;fill:#e5e7eb;letter-spacing:.35px}.tiny{font:700 10px 'Segoe UI',Arial,sans-serif;fill:#94a3b8}.pct{font:900 11px 'Segoe UI',Arial,sans-serif;fill:#67e8f9}.bar{transform-origin:left center;animation:grow 1.7s ease-out both}.dash{stroke-dasharray:8 11;animation:dash 9s linear infinite}.flow{stroke-dasharray:20 24;animation:flow 3.6s linear infinite}.pulse{animation:pulse 2.4s ease-in-out infinite}.float{animation:float 4.6s ease-in-out infinite}@keyframes grow{from{transform:scaleX(.2);opacity:.35}to{transform:scaleX(1);opacity:1}}@keyframes dash{to{stroke-dashoffset:-180}}@keyframes flow{to{stroke-dashoffset:-180}}@keyframes pulse{0%,100%{opacity:.55}50%{opacity:1}}@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}</style>
   </defs>
-
-  <rect width="1100" height="520" rx="28" fill="url(#bg)"/>
-  <rect x="18" y="18" width="1064" height="484" rx="24" stroke="#334155" stroke-width="1.4"/>
-  <path d="M70 92 C250 40, 400 130, 560 80 S875 66, 1030 112" stroke="url(#cyan)" stroke-opacity=".45" stroke-width="2" class="dash"/>
-  <path d="M80 430 C240 350, 365 474, 540 410 S855 370, 1030 450" stroke="#22d3ee" stroke-opacity=".28" stroke-width="2" class="dash"/>
-
-  <text x="55" y="65" class="title">Engineering Stack Intelligence</text>
-  <text x="55" y="92" class="subtitle">Skills map across systems, AI, security, blockchain, and production infrastructure</text>
-
-  <g transform="translate(55,128)">
-    <rect width="480" height="328" rx="22" fill="#0b1220" stroke="#1e3a8a"/>
-    <text x="26" y="42" class="label">Primary Languages</text>
-    <text x="26" y="64" class="small">Based on working stack, not only public repo counters</text>
-
-    <g transform="translate(26,92)">
-      <text x="0" y="0" class="label">Rust</text><text x="405" y="0" class="pct">Core</text>
-      <rect x="0" y="16" width="420" height="12" rx="6" fill="#1e293b"/><rect class="bar" x="0" y="16" width="390" height="12" rx="6" fill="url(#rust)"/>
-    </g>
-    <g transform="translate(26,144)">
-      <text x="0" y="0" class="label">Python</text><text x="383" y="0" class="pct">Strong</text>
-      <rect x="0" y="16" width="420" height="12" rx="6" fill="#1e293b"/><rect class="bar" x="0" y="16" width="355" height="12" rx="6" fill="url(#cyan)"/>
-    </g>
-    <g transform="translate(26,196)">
-      <text x="0" y="0" class="label">Solidity</text><text x="383" y="0" class="pct">Strong</text>
-      <rect x="0" y="16" width="420" height="12" rx="6" fill="#1e293b"/><rect class="bar" x="0" y="16" width="340" height="12" rx="6" fill="#8b5cf6"/>
-    </g>
-    <g transform="translate(26,248)">
-      <text x="0" y="0" class="label">C++</text><text x="368" y="0" class="pct">Working</text>
-      <rect x="0" y="16" width="420" height="12" rx="6" fill="#1e293b"/><rect class="bar" x="0" y="16" width="300" height="12" rx="6" fill="#60a5fa"/>
-    </g>
-    <g transform="translate(26,300)">
-      <text x="0" y="0" class="label">Dart / Flutter</text><text x="368" y="0" class="pct">Working</text>
-      <rect x="0" y="16" width="420" height="12" rx="6" fill="#1e293b"/><rect class="bar" x="0" y="16" width="295" height="12" rx="6" fill="#38bdf8"/>
-    </g>
+  <rect width="1100" height="650" rx="28" fill="url(#bg)"/>
+  <rect x="18" y="18" width="1064" height="614" rx="24" fill="#020617" fill-opacity="0.55" stroke="#1e40af" stroke-opacity="0.65"/>
+  <circle cx="970" cy="92" r="150" fill="url(#glow)" opacity="0.55"/><circle cx="160" cy="565" r="170" fill="url(#glow)" opacity="0.28"/>
+  <path d="M60 115 C240 45 390 132 570 82 S850 58 1038 124" stroke="url(#cyan)" stroke-opacity=".32" stroke-width="2" class="dash"/>
+  <path d="M80 600 C275 535 420 626 620 565 S880 530 1022 585" stroke="url(#purple)" stroke-opacity=".35" stroke-width="2" class="dash"/>
+  <text x="55" y="64" class="title">Engineering Capability Map</text>
+  <text x="55" y="90" class="sub">Working stack across systems, AI, security, Web3, backend, product delivery, and infrastructure</text>
+  <rect x="50" y="122" width="430" height="245" rx="22" fill="#0b1220" fill-opacity=".88" stroke="#334155"/>
+  <text x="78" y="160" class="head">Primary Languages</text><text x="78" y="182" class="tiny">Rust-first stack with production software breadth</text>
+  <g transform="translate(78,212)"><text x="0" y="0" class="label">Rust</text><text x="322" y="0" class="pct">CORE</text><rect x="0" y="14" width="360" height="10" rx="6" fill="#1e293b"/><rect class="bar" x="0" y="14" width="338" height="10" rx="6" fill="url(#rust)"/></g>
+  <g transform="translate(78,252)"><text x="0" y="0" class="label">Python</text><text x="305" y="0" class="pct">STRONG</text><rect x="0" y="14" width="360" height="10" rx="6" fill="#1e293b"/><rect class="bar" x="0" y="14" width="312" height="10" rx="6" fill="url(#cyan)"/></g>
+  <g transform="translate(78,292)"><text x="0" y="0" class="label">Solidity</text><text x="305" y="0" class="pct">STRONG</text><rect x="0" y="14" width="360" height="10" rx="6" fill="#1e293b"/><rect class="bar" x="0" y="14" width="300" height="10" rx="6" fill="url(#purple)"/></g>
+  <g transform="translate(78,332)"><text x="0" y="0" class="label">C++ · Dart · Go</text><text x="297" y="0" class="pct">WORKING</text><rect x="0" y="14" width="360" height="10" rx="6" fill="#1e293b"/><rect class="bar" x="0" y="14" width="258" height="10" rx="6" fill="#60a5fa"/></g>
+  <g transform="translate(55,390)"><rect width="990" height="62" rx="20" fill="#0b1220" fill-opacity=".78" stroke="#334155"/><text x="26" y="27" class="head">Language Surface</text><rect x="210" y="18" width="70" height="28" rx="10" fill="#0f172a" stroke="#f97316" stroke-opacity=".68"/><text x="226" y="37" class="chip">RUST</text>
+      <rect x="290" y="18" width="84" height="28" rx="10" fill="#0f172a" stroke="#22d3ee" stroke-opacity=".68"/><text x="306" y="37" class="chip">PYTHON</text>
+      <rect x="384" y="18" width="94" height="28" rx="10" fill="#0f172a" stroke="#8b5cf6" stroke-opacity=".68"/><text x="400" y="37" class="chip">SOLIDITY</text>
+      <rect x="488" y="18" width="62" height="28" rx="10" fill="#0f172a" stroke="#60a5fa" stroke-opacity=".68"/><text x="504" y="37" class="chip">C++</text>
+      <rect x="560" y="18" width="70" height="28" rx="10" fill="#0f172a" stroke="#38bdf8" stroke-opacity=".68"/><text x="576" y="37" class="chip">DART</text>
+      <rect x="640" y="18" width="90" height="28" rx="10" fill="#0f172a" stroke="#38bdf8" stroke-opacity=".68"/><text x="656" y="37" class="chip">FLUTTER</text>
+      <rect x="740" y="18" width="54" height="28" rx="10" fill="#0f172a" stroke="#22d3ee" stroke-opacity=".68"/><text x="756" y="37" class="chip">GO</text>
+      <rect x="804" y="18" width="68" height="28" rx="10" fill="#0f172a" stroke="#fb7185" stroke-opacity=".68"/><text x="820" y="37" class="chip">HTML</text>
+      <rect x="882" y="18" width="110" height="28" rx="10" fill="#0f172a" stroke="#facc15" stroke-opacity=".68"/><text x="898" y="37" class="chip">JAVASCRIPT</text></g>
+  <rect x="520" y="122" width="525" height="245" rx="22" fill="#0b1220" fill-opacity=".88" stroke="#334155"/>
+  <text x="548" y="160" class="head">Applied Engineering Areas</text><text x="548" y="182" class="tiny">High-level delivery map aligned with resume tracks</text>
+  <g transform="translate(548,207)">
+    <g class="float"><rect width="145" height="54" rx="14" fill="#111827" stroke="#22d3ee" stroke-opacity=".55"/><text x="16" y="22" class="chip">SYSTEMS</text><text x="16" y="40" class="note">Rust · APIs</text></g>
+    <g class="float" style="animation-delay:.2s" transform="translate(162,0)"><rect width="145" height="54" rx="14" fill="#111827" stroke="#8b5cf6" stroke-opacity=".55"/><text x="16" y="22" class="chip">AI / ML</text><text x="16" y="40" class="note">LLMs · eval</text></g>
+    <g class="float" style="animation-delay:.4s" transform="translate(324,0)"><rect width="145" height="54" rx="14" fill="#111827" stroke="#10b981" stroke-opacity=".55"/><text x="16" y="22" class="chip">SECURITY</text><text x="16" y="40" class="note">VAPT · intel</text></g>
+    <g class="float" style="animation-delay:.6s" transform="translate(0,75)"><rect width="145" height="54" rx="14" fill="#111827" stroke="#f59e0b" stroke-opacity=".55"/><text x="16" y="22" class="chip">WEB3</text><text x="16" y="40" class="note">EVM · DeFi</text></g>
+    <g class="float" style="animation-delay:.8s" transform="translate(162,75)"><rect width="145" height="54" rx="14" fill="#111827" stroke="#60a5fa" stroke-opacity=".55"/><text x="16" y="22" class="chip">DEVOPS</text><text x="16" y="40" class="note">Linux · CI/CD</text></g>
+    <g class="float" style="animation-delay:1s" transform="translate(324,75)"><rect width="145" height="54" rx="14" fill="#111827" stroke="#fb7185" stroke-opacity=".55"/><text x="16" y="22" class="chip">PRODUCT</text><text x="16" y="40" class="note">Dashboards</text></g>
   </g>
-
-  <g transform="translate(580,128)">
-    <rect width="465" height="328" rx="22" fill="#0b1220" stroke="#334155"/>
-    <text x="26" y="42" class="label">Engineering Domains</text>
-    <text x="26" y="64" class="small">Where the stack is applied</text>
-
-    <g class="float" transform="translate(26,92)">
-      <rect width="190" height="56" rx="14" fill="#111827" stroke="#22d3ee" stroke-opacity=".45"/>
-      <text x="18" y="34" class="chip">Rust Systems</text>
-    </g>
-    <g class="float" style="animation-delay:.4s" transform="translate(246,92)">
-      <rect width="190" height="56" rx="14" fill="#111827" stroke="#8b5cf6" stroke-opacity=".5"/>
-      <text x="18" y="34" class="chip">AI Engineering</text>
-    </g>
-    <g class="float" style="animation-delay:.8s" transform="translate(26,170)">
-      <rect width="190" height="56" rx="14" fill="#111827" stroke="#ef4444" stroke-opacity=".5"/>
-      <text x="18" y="34" class="chip">Cybersecurity</text>
-    </g>
-    <g class="float" style="animation-delay:1.2s" transform="translate(246,170)">
-      <rect width="190" height="56" rx="14" fill="#111827" stroke="#f59e0b" stroke-opacity=".55"/>
-      <text x="18" y="34" class="chip">Blockchain</text>
-    </g>
-    <g class="float" style="animation-delay:1.6s" transform="translate(26,248)">
-      <rect width="190" height="56" rx="14" fill="#111827" stroke="#10b981" stroke-opacity=".5"/>
-      <text x="18" y="34" class="chip">DevOps / Cloud</text>
-    </g>
-    <g class="float" style="animation-delay:2s" transform="translate(246,248)">
-      <rect width="190" height="56" rx="14" fill="#111827" stroke="#60a5fa" stroke-opacity=".5"/>
-      <text x="18" y="34" class="chip">Backend APIs</text>
-    </g>
-  </g>
-
-  <g filter="url(#glow)" class="pulse">
-    <circle cx="550" cy="286" r="22" fill="#22d3ee" fill-opacity=".18" stroke="#22d3ee"/>
-    <circle cx="550" cy="286" r="5" fill="#67e8f9"/>
-  </g>
-  <path d="M535 286 H580" stroke="#22d3ee" stroke-opacity=".55" stroke-width="2"/>
+  <path d="M500 248 C520 238 528 238 548 234" stroke="url(#cyan)" stroke-width="3" stroke-linecap="round" class="flow"/><circle cx="500" cy="248" r="9" fill="#22d3ee" opacity=".7" filter="url(#blurGlow)" class="pulse"/>
+  <g transform="translate(55,480)"><rect width="990" height="112" rx="22" fill="#0b1220" fill-opacity=".82" stroke="#334155"/><text x="26" y="32" class="head">Skill Lanes</text><text x="26" y="54" class="tiny">Backend · Infrastructure · Security · AI · Web3</text><rect x="215" y="20" width="142" height="26" rx="13" fill="#0f172a" stroke="#22d3ee" stroke-opacity=".55"/><text x="231" y="38" class="chip2">REST / gRPC</text>
+      <rect x="367" y="20" width="122" height="26" rx="13" fill="#0f172a" stroke="#60a5fa" stroke-opacity=".55"/><text x="383" y="38" class="chip2">LINUX</text>
+      <rect x="499" y="20" width="122" height="26" rx="13" fill="#0f172a" stroke="#10b981" stroke-opacity=".55"/><text x="515" y="38" class="chip2">OWASP</text>
+      <rect x="631" y="20" width="138" height="26" rx="13" fill="#0f172a" stroke="#8b5cf6" stroke-opacity=".55"/><text x="647" y="38" class="chip2">PROMPT ENG</text>
+      <rect x="779" y="20" width="84" height="26" rx="13" fill="#0f172a" stroke="#f59e0b" stroke-opacity=".55"/><text x="795" y="38" class="chip2">EVM</text>
+      <rect x="215" y="58" width="126" height="26" rx="13" fill="#0f172a" stroke="#22d3ee" stroke-opacity=".55"/><text x="231" y="76" class="chip2">ASYNC RUST</text>
+      <rect x="351" y="58" width="140" height="26" rx="13" fill="#0f172a" stroke="#60a5fa" stroke-opacity=".55"/><text x="367" y="76" class="chip2">DOCKER / K8S</text>
+      <rect x="501" y="58" width="132" height="26" rx="13" fill="#0f172a" stroke="#10b981" stroke-opacity=".55"/><text x="517" y="76" class="chip2">MITRE ATTACK</text>
+      <rect x="643" y="58" width="118" height="26" rx="13" fill="#0f172a" stroke="#8b5cf6" stroke-opacity=".55"/><text x="659" y="76" class="chip2">LLM EVAL</text>
+      <rect x="771" y="58" width="174" height="26" rx="13" fill="#0f172a" stroke="#f59e0b" stroke-opacity=".55"/><text x="787" y="76" class="chip2">ETH · BNB · SOL</text></g>
+  <g transform="translate(55,616)"><rect width="990" height="24" rx="12" fill="#020617" stroke="#1e3a8a"/><circle cx="42" cy="12" r="4" fill="#22d3ee" class="pulse"/><text x="56" y="16" class="tiny">Build</text><circle cx="142" cy="12" r="4" fill="#8b5cf6" class="pulse"/><text x="156" y="16" class="tiny">Automate</text><circle cx="280" cy="12" r="4" fill="#10b981" class="pulse"/><text x="294" y="16" class="tiny">Secure</text><circle cx="405" cy="12" r="4" fill="#f59e0b" class="pulse"/><text x="419" y="16" class="tiny">Ship</text><path d="M510 12 H900" stroke="url(#cyan)" stroke-opacity=".72" stroke-width="2" class="flow"/></g>
 </svg>
