@@ -1,0 +1,23 @@
+name: Generate 3D contribution profile
+
+on:
+  schedule:
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: yoshi389111/github-profile-3d-contrib@0.7.1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          USERNAME: AsadAli-CyberZeus
+      - name: Commit generated 3D profile
+        uses: EndBug/add-and-commit@v9
+        with:
+          message: "Generate 3D contribution profile"
+          add: "profile-3d-contrib/*.svg"

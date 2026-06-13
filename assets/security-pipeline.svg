@@ -1,0 +1,24 @@
+<svg width="1100" height="370" viewBox="0 0 1100 370" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Animated security engineering pipeline">
+<defs>
+  <linearGradient id="bg" x1="0" x2="1"><stop offset="0" stop-color="#020617"/><stop offset="1" stop-color="#111827"/></linearGradient>
+  <linearGradient id="line" x1="0" x2="1"><stop offset="0" stop-color="#22d3ee"/><stop offset=".5" stop-color="#8b5cf6"/><stop offset="1" stop-color="#10b981"/></linearGradient>
+  <filter id="glow"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  <style>
+    .card{fill:#0f172a;stroke:#334155;stroke-width:2}.title{font-family:Inter,Arial,sans-serif;font-weight:800;fill:#f8fafc;font-size:21px}.sub{font-family:'Fira Code',monospace;fill:#94a3b8;font-size:14px}.pipe{stroke:url(#line);stroke-width:5;stroke-linecap:round;stroke-dasharray:18 18;animation:dash 10s linear infinite}.dot{animation:move 6s linear infinite;filter:url(#glow)}.d2{animation-delay:-1.5s}.d3{animation-delay:-3s}.d4{animation-delay:-4.5s}@keyframes dash{to{stroke-dashoffset:-360}}@keyframes move{0%{transform:translate(102px,185px);opacity:0}8%{opacity:1}25%{transform:translate(330px,185px)}50%{transform:translate(550px,185px)}75%{transform:translate(775px,185px)}92%{opacity:1}100%{transform:translate(1000px,185px);opacity:0}}
+  </style>
+</defs>
+<rect width="1100" height="370" rx="24" fill="url(#bg)"/>
+<text x="550" y="52" text-anchor="middle" class="title" font-size="28">Security Engineering Delivery Pipeline</text>
+<path class="pipe" d="M105 185 H995"/>
+<circle class="dot" cx="0" cy="0" r="10" fill="#22d3ee"/>
+<circle class="dot d2" cx="0" cy="0" r="10" fill="#8b5cf6"/>
+<circle class="dot d3" cx="0" cy="0" r="10" fill="#10b981"/>
+<circle class="dot d4" cx="0" cy="0" r="10" fill="#f59e0b"/>
+<g>
+  <rect class="card" x="45" y="115" width="155" height="140" rx="18"/><text class="title" x="122" y="158" text-anchor="middle">Detect</text><text class="sub" x="122" y="192" text-anchor="middle">Nmap • IDS/IPS</text><text class="sub" x="122" y="216" text-anchor="middle">CVE • EPSS</text>
+  <rect class="card" x="270" y="115" width="155" height="140" rx="18"/><text class="title" x="347" y="158" text-anchor="middle">Analyze</text><text class="sub" x="347" y="192" text-anchor="middle">MITRE ATT&CK</text><text class="sub" x="347" y="216" text-anchor="middle">Risk scoring</text>
+  <rect class="card" x="495" y="115" width="155" height="140" rx="18"/><text class="title" x="572" y="158" text-anchor="middle">Enforce</text><text class="sub" x="572" y="192" text-anchor="middle">eBPF/XDP</text><text class="sub" x="572" y="216" text-anchor="middle">Zero Trust</text>
+  <rect class="card" x="720" y="115" width="155" height="140" rx="18"/><text class="title" x="797" y="158" text-anchor="middle">Prove</text><text class="sub" x="797" y="192" text-anchor="middle">Attestation</text><text class="sub" x="797" y="216" text-anchor="middle">Audit trails</text>
+  <rect class="card" x="945" y="115" width="110" height="140" rx="18"/><text class="title" x="1000" y="158" text-anchor="middle">Ship</text><text class="sub" x="1000" y="192" text-anchor="middle">CI/CD</text><text class="sub" x="1000" y="216" text-anchor="middle">Cloud</text>
+</g>
+</svg>

@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>AsadAli-CyberZeus System Map</title>
+<style>
+  body { margin:0; background:#0d1117; color:#c9d1d9; font-family:Inter,-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif; }
+  .wrap { max-width:1120px; margin:0 auto; padding:28px 18px 80px; }
+  .note { background:#161b22; border:1px solid #30363d; padding:14px 18px; border-radius:10px; color:#94a3b8; margin-bottom:22px; }
+  h1 { color:#f0f6fc; }
+  .card { border:1px solid #30363d; border-radius:18px; padding:18px; background:#0b1220; }
+  svg { max-width:100%; height:auto; display:block; margin:0 auto; }
+</style>
+</head>
+<body><div class="wrap">
+<div class="note"><strong>System Map:</strong> Updated circular architecture map for the final profile.</div>
+<h1>Updated PRO MAX Circular System Map</h1>
+<div class="card">
+<svg width="1280" height="720" viewBox="0 0 1280 720" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="48%" r="70%">
+      <stop offset="0%" stop-color="#0B2545"/>
+      <stop offset="38%" stop-color="#07162B"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </radialGradient>
+    <linearGradient id="cyanBlue" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#22D3EE"/>
+      <stop offset="46%" stop-color="#3B82F6"/>
+      <stop offset="100%" stop-color="#8B5CF6"/>
+    </linearGradient>
+    <linearGradient id="greenCyan" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#34D399"/>
+      <stop offset="100%" stop-color="#22D3EE"/>
+    </linearGradient>
+    <linearGradient id="orangePink" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F59E0B"/>
+      <stop offset="100%" stop-color="#EC4899"/>
+    </linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </linearGradient>
+    <filter id="softGlow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feColorMatrix in="blur" type="matrix" values="0 0 0 0 0.13  0 0 0 0 0.83  0 0 0 0 0.93  0 0 0 0.85 0" result="glow"/>
+      <feMerge><feMergeNode in="glow"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="heavyGlow" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="11" result="blur"/>
+      <feColorMatrix in="blur" type="matrix" values="0 0 0 0 0.11  0 0 0 0 0.78  0 0 0 0 1  0 0 0 0.75 0" result="glow"/>
+      <feMerge><feMergeNode in="glow"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="grid" width="42" height="42" patternUnits="userSpaceOnUse">
+      <path d="M 42 0 L 0 0 0 42" fill="none" stroke="#1E293B" stroke-width="1" opacity="0.45"/>
+    </pattern>
+    <style>
+      .title{font:900 35px Inter,Segoe UI,Arial,sans-serif;fill:#F8FAFC;letter-spacing:.5px}.subtitle{font:600 15px Inter,Segoe UI,Arial,sans-serif;fill:#94A3B8}.mini{font:800 11px ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;fill:#67E8F9;letter-spacing:1.7px}.label{font:900 16px Inter,Segoe UI,Arial,sans-serif;fill:#F8FAFC}.body{font:600 12.5px Inter,Segoe UI,Arial,sans-serif;fill:#CBD5E1}.tiny{font:700 11px Inter,Segoe UI,Arial,sans-serif;fill:#94A3B8}.ring{fill:none;stroke-width:1.7;stroke-dasharray:14 14;opacity:.75;animation:dash 11s linear infinite}.ring2{animation-duration:15s;animation-direction:reverse;opacity:.45}.ring3{animation-duration:19s;opacity:.28}.orbital{transform-origin:640px 380px;animation:spin 24s linear infinite}.orbital2{transform-origin:640px 380px;animation:spinR 30s linear infinite}.float{animation:float 4.6s ease-in-out infinite}.float2{animation-delay:.7s}.float3{animation-delay:1.4s}.float4{animation-delay:2.1s}.pulse{animation:pulse 2.8s ease-in-out infinite}.scan{transform-origin:640px 380px;animation:spin 8s linear infinite;opacity:.35}.nodeCard{fill:url(#card);stroke-width:1.6}.dashLine{fill:none;stroke:#22D3EE;stroke-width:2;stroke-dasharray:8 12;opacity:.7;animation:dash 6s linear infinite}.dot{filter:url(#softGlow)}@keyframes dash{to{stroke-dashoffset:-220}}@keyframes spin{to{transform:rotate(360deg)}}@keyframes spinR{to{transform:rotate(-360deg)}}@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}@keyframes pulse{0%,100%{opacity:.65}50%{opacity:1}}
+    </style>
+  </defs>
+
+  <rect width="1280" height="720" rx="30" fill="url(#bg)"/>
+  <rect x="34" y="34" width="1212" height="652" rx="26" fill="url(#grid)" opacity="0.42"/>
+  <rect x="34" y="34" width="1212" height="652" rx="26" fill="none" stroke="#1E3A8A" stroke-width="1.2" opacity="0.85"/>
+
+  <g opacity="0.25">
+    <circle cx="142" cy="112" r="86" fill="#22D3EE" filter="url(#heavyGlow)"/>
+    <circle cx="1128" cy="596" r="98" fill="#8B5CF6" filter="url(#heavyGlow)"/>
+  </g>
+
+  <text x="70" y="86" class="title">SYSTEM ARCHITECTURE</text>
+  <text x="72" y="114" class="subtitle">Security · AI automation · backend infrastructure · Web3 engineering</text>
+
+  <g transform="translate(930 58)">
+    <rect width="250" height="46" rx="23" fill="#020617" stroke="#22D3EE" stroke-width="1.1" opacity=".95"/>
+    <circle cx="30" cy="23" r="7" fill="#22C55E" filter="url(#softGlow)"/>
+    <text x="48" y="28" class="mini">ENGINEERING MAP</text>
+  </g>
+
+  <!-- orbit rings -->
+  <circle class="ring" cx="640" cy="380" r="238" stroke="url(#cyanBlue)"/>
+  <circle class="ring ring2" cx="640" cy="380" r="184" stroke="#22D3EE"/>
+  <circle class="ring ring3" cx="640" cy="380" r="293" stroke="#8B5CF6"/>
+  <ellipse class="ring ring2" cx="640" cy="380" rx="348" ry="116" stroke="#34D399" opacity="0.35"/>
+  <ellipse class="ring" cx="640" cy="380" rx="118" ry="326" stroke="#3B82F6" opacity="0.28"/>
+
+  <!-- scan wedge -->
+  <path class="scan" d="M640 380 L640 85 A295 295 0 0 1 780 121 Z" fill="url(#cyanBlue)" opacity="0.18"/>
+
+  <!-- animated orbit particles -->
+  <g class="orbital"><circle cx="640" cy="142" r="7" fill="#22D3EE" class="dot"/><circle cx="878" cy="380" r="5" fill="#A78BFA" class="dot"/></g>
+  <g class="orbital2"><circle cx="640" cy="196" r="6" fill="#34D399" class="dot"/><circle cx="824" cy="380" r="4" fill="#F59E0B" class="dot"/></g>
+
+  <!-- connection lines -->
+  <path class="dashLine" d="M640 380 C504 300 405 235 286 205"/>
+  <path class="dashLine" d="M640 380 C780 300 870 236 994 205"/>
+  <path class="dashLine" d="M640 380 C502 455 405 520 286 555"/>
+  <path class="dashLine" d="M640 380 C778 455 872 520 994 555"/>
+
+  <!-- central core -->
+  <g filter="url(#heavyGlow)">
+    <circle cx="640" cy="380" r="108" fill="#020617" stroke="url(#cyanBlue)" stroke-width="3"/>
+    <circle cx="640" cy="380" r="82" fill="#08111F" stroke="#1E40AF" stroke-width="1.5"/>
+    <circle class="pulse" cx="640" cy="380" r="54" fill="none" stroke="#22D3EE" stroke-width="2" opacity=".65"/>
+  </g>
+  <text x="640" y="354" text-anchor="middle" class="mini">ENGINEERING CORE</text>
+  <text x="640" y="386" text-anchor="middle" style="font:900 29px Inter,Segoe UI,Arial,sans-serif;fill:#F8FAFC">SECURE</text>
+  <text x="640" y="416" text-anchor="middle" style="font:900 29px Inter,Segoe UI,Arial,sans-serif;fill:#67E8F9">SYSTEMS</text>
+  <text x="640" y="447" text-anchor="middle" class="tiny">backend · automation · reliability</text>
+
+  <!-- node cards -->
+  <g class="float">
+    <rect x="88" y="151" width="310" height="130" rx="26" class="nodeCard" stroke="#22D3EE"/>
+    <circle cx="128" cy="191" r="15" fill="url(#cyanBlue)" filter="url(#softGlow)"/>
+    <text x="158" y="196" class="label">SECURITY ENGINEERING</text>
+    <text x="128" y="232" class="body">secure design · threat thinking</text>
+    <text x="128" y="255" class="body">controls · validation · hardening</text>
+  </g>
+  <g class="float float2">
+    <rect x="882" y="151" width="310" height="130" rx="26" class="nodeCard" stroke="#8B5CF6"/>
+    <circle cx="922" cy="191" r="15" fill="url(#cyanBlue)" filter="url(#softGlow)"/>
+    <text x="952" y="196" class="label">AI AUTOMATION</text>
+    <text x="922" y="232" class="body">LLM workflows · evaluation</text>
+    <text x="922" y="255" class="body">risk scoring · smart dashboards</text>
+  </g>
+  <g class="float float3">
+    <rect x="88" y="499" width="310" height="130" rx="26" class="nodeCard" stroke="#34D399"/>
+    <circle cx="128" cy="539" r="15" fill="url(#greenCyan)" filter="url(#softGlow)"/>
+    <text x="158" y="544" class="label">RUST / BACKEND</text>
+    <text x="128" y="580" class="body">APIs · workers · distributed logic</text>
+    <text x="128" y="603" class="body">performance · reliability · delivery</text>
+  </g>
+  <g class="float float4">
+    <rect x="882" y="499" width="310" height="130" rx="26" class="nodeCard" stroke="#F59E0B"/>
+    <circle cx="922" cy="539" r="15" fill="url(#orangePink)" filter="url(#softGlow)"/>
+    <text x="952" y="544" class="label">WEB3 / DATA</text>
+    <text x="922" y="580" class="body">smart contracts · integrations</text>
+    <text x="922" y="603" class="body">analytics · review · workflows</text>
+  </g>
+
+  <!-- bottom mini legend -->
+  <g transform="translate(277 650)">
+    <rect width="726" height="36" rx="18" fill="#020617" stroke="#1E40AF" opacity=".94"/>
+    <circle cx="35" cy="18" r="5" fill="#22D3EE"/><text x="52" y="23" class="tiny">Build</text>
+    <circle cx="152" cy="18" r="5" fill="#8B5CF6"/><text x="169" y="23" class="tiny">Automate</text>
+    <circle cx="304" cy="18" r="5" fill="#34D399"/><text x="321" y="23" class="tiny">Secure</text>
+    <circle cx="444" cy="18" r="5" fill="#F59E0B"/><text x="461" y="23" class="tiny">Observe</text>
+    <circle cx="582" cy="18" r="5" fill="#22C55E"/><text x="599" y="23" class="tiny">Ship</text>
+  </g>
+</svg>
+</div>
+</div></body></html>

@@ -1,0 +1,20 @@
+<svg width="1100" height="260" viewBox="0 0 1100 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Animated cyber matrix strip">
+<defs>
+  <linearGradient id="fade" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#020617"/><stop offset=".5" stop-color="#062019"/><stop offset="1" stop-color="#020617"/></linearGradient>
+  <style>
+    .t{font-family:'Fira Code',monospace;font-size:16px;fill:#22c55e;opacity:.75}.h{font-family:Inter,Arial,sans-serif;font-size:32px;font-weight:900;fill:#f8fafc}.s{font-family:'Fira Code',monospace;font-size:17px;fill:#67e8f9}.col{animation:fall 6s linear infinite}.c2{animation-delay:-1s}.c3{animation-delay:-2s}.c4{animation-delay:-3s}.c5{animation-delay:-4s}.c6{animation-delay:-5s}@keyframes fall{from{transform:translateY(-190px);opacity:.15}20%{opacity:.9}to{transform:translateY(240px);opacity:.05}}
+  </style>
+</defs>
+<rect width="1100" height="260" rx="24" fill="url(#fade)"/>
+<g opacity=".65">
+  <text class="t col" x="35" y="40">010101 secure rust ai chain</text>
+  <text class="t col c2" x="160" y="10">zero-trust did vc xdp</text>
+  <text class="t col c3" x="340" y="80">threat intel mitre epSS cve</text>
+  <text class="t col c4" x="580" y="30">llm eval red team pipelines</text>
+  <text class="t col c5" x="780" y="90">solidity evm audit mesh</text>
+  <text class="t col c6" x="950" y="20">grpc docker k8s</text>
+</g>
+<rect x="120" y="70" width="860" height="120" rx="22" fill="#020617" opacity=".86" stroke="#14532d"/>
+<text class="h" x="550" y="122" text-anchor="middle">Cybersecurity × Rust Systems × AI × Blockchain</text>
+<text class="s" x="550" y="158" text-anchor="middle">production engineering • security architecture • intelligent automation</text>
+</svg>
