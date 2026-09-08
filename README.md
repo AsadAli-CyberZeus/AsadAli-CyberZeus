@@ -172,18 +172,17 @@ I focus on production-grade engineering: systems that are secure by design, obse
 
 ---
 
-## 🐍 Contribution Flow
+## 📊 Live Engineering Signal
 
 <div align="center">
-  <img src="./assets/contribution-snake.svg" alt="Contribution flow animation" width="96%" />
-</div>
-
----
-
-## 🧊 Contribution Graph
-
-<div align="center">
-  <img src="./assets/contribution-3d.svg" alt="Contribution graph animation" width="96%" />
+  <img src="./assets/profile-details.svg" alt="Asad Ali GitHub profile details and contribution activity" width="96%" />
+  <br />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=AsadAliEngineer&theme=github_dark" alt="Top languages by repository" width="47%" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=AsadAliEngineer&theme=github_dark" alt="Top languages by commit" width="47%" />
+  <br />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=AsadAliEngineer&theme=github_dark" alt="GitHub contribution statistics" width="47%" />
+  <br />
+  <img src="https://streak-stats.demolab.com?user=AsadAliEngineer&theme=dark" alt="GitHub contribution streak" width="62%" />
 </div>
 
 ---
@@ -212,8 +211,8 @@ I focus on production-grade engineering: systems that are secure by design, obse
 <div align="center">
 
 <img src="https://img.shields.io/badge/LinkedIn-Asad%20Ali-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
-<a href="https://github.com/AsadAli-CyberZeus" target="_blank"><img src="https://img.shields.io/badge/GitHub-AsadAli%20CyberZeus-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" /></a>
-<a href="mailto:asadali.cryptoeng@gmail.com"><img src="https://img.shields.io/badge/Email-asadali.cryptoeng%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
+<a href="https://github.com/AsadAliEngineer" target="_blank"><img src="https://img.shields.io/badge/GitHub-AsadAliEngineer-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub profile: AsadAliEngineer" /></a>
+<a href="mailto:asadalieng1107@gmail.com"><img src="https://img.shields.io/badge/Email-asadalieng1107%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email: asadalieng1107@gmail.com" /></a>
 
 </div>
 
