@@ -31,7 +31,6 @@ jobs:
       - name: Generate live engineering dashboard
         env:
           DASHBOARD_TOKEN: ${{ secrets.METRICS_TOKEN }}
-          GITHUB_TOKEN: ${{ github.token }}
           GITHUB_USERNAME: ${{ github.repository_owner }}
         run: python .github/scripts/generate_live_dashboard.py
       - name: Commit metrics and live dashboard
