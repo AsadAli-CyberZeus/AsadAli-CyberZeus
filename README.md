@@ -178,10 +178,6 @@ I focus on production-grade engineering: systems that are secure by design, obse
   <img src="./assets/live-engineering-signal.svg" alt="Private-aware AsadAliEngineer repository and technology statistics" width="96%" />
   <br />
   <img src="https://ghchart.rshah.org/40c463/AsadAliEngineer" alt="AsadAliEngineer GitHub contribution calendar" width="96%" />
-  <br />
-  <img src="https://streak-stats.demolab.com?user=AsadAliEngineer&theme=dark" alt="GitHub contribution streak" width="62%" />
-  <br />
-  <sub>Private-aware repository and language data refreshes daily; contribution calendar and streak load separately.</sub>
 </div>
 
 ---

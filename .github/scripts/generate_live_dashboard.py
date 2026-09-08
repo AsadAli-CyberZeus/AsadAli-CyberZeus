@@ -107,24 +107,12 @@ language_colors = {
 }
 fallback_colors = ["#58a6ff", "#3fb950", "#d29922", "#bc8cff", "#f778ba"]
 
-stats = [
-    ("Owned repositories", len(repositories)),
-    ("Public repositories", public_count),
-    ("Private repositories", private_count),
-    ("Languages detected", len(language_repository_counts)),
-]
-
-stat_cards = []
-for index, (label, value) in enumerate(stats):
-    x = 30 + index * 210
-    stat_cards.append(
-        f"""
-      <g transform="translate({x} 104)">
-        <rect width="195" height="82" rx="11" fill="#0b1320" stroke="#30363d" />
-        <text x="18" y="37" class="metric">{value}</text>
-        <text x="18" y="62" class="label">{escape(label)}</text>
+language_count_card = f"""
+      <g transform="translate(680 24)">
+        <rect width="190" height="62" rx="11" fill="#0b1320" stroke="#30363d" />
+        <text x="18" y="39" class="metric">{len(language_repository_counts)}</text>
+        <text x="72" y="37" class="label">Languages detected</text>
       </g>"""
-    )
 
 max_repository_coverage = max(
     (repository_count for _, repository_count in top_languages), default=1
@@ -135,7 +123,7 @@ for index, (language, repository_count) in enumerate(top_languages):
     column = 1 if index >= 5 else 0
     row = index % 5
     x = 52 + column * 410
-    y = 246 + row * 38
+    y = 143 + row * 38
     bar_width = max(4, (repository_count / max_repository_coverage) * 310)
     color = language_colors.get(
         language, fallback_colors[index % len(fallback_colors)]
@@ -166,13 +154,13 @@ for index, (technology, color) in enumerate(core_stack):
     text_color = "#0d1117" if technology in {"JavaScript", "React"} else "#f0f6fc"
     stack_chips.append(
         f"""
-      <g transform="translate({x} 494)">
+      <g transform="translate({x} 394)">
         <rect width="126" height="38" rx="19" fill="{color}" fill-opacity="0.92" />
         <text x="63" y="25" text-anchor="middle" fill="{text_color}" class="stack">{escape(technology)}</text>
       </g>"""
     )
 
-svg = f"""<svg xmlns="http://www.w3.org/2000/svg" width="900" height="560" viewBox="0 0 900 560" role="img" aria-labelledby="title desc">
+svg = f"""<svg xmlns="http://www.w3.org/2000/svg" width="900" height="460" viewBox="0 0 900 460" role="img" aria-labelledby="title desc">
   <title id="title">{escape(USERNAME)} private-aware engineering profile</title>
   <desc id="desc">Owned public and private repository counts, language coverage, and core engineering stack generated from the official GitHub API.</desc>
   <defs>
@@ -193,18 +181,18 @@ svg = f"""<svg xmlns="http://www.w3.org/2000/svg" width="900" height="560" viewB
     </style>
   </defs>
 
-  <rect x="1" y="1" width="898" height="558" rx="16" fill="url(#panel)" stroke="#30363d" stroke-width="2" />
+  <rect x="1" y="1" width="898" height="458" rx="16" fill="url(#panel)" stroke="#30363d" stroke-width="2" />
   <circle cx="38" cy="41" r="8" fill="#3fb950" />
   <text x="58" y="49" class="title">Repository &amp; Technology Signal</text>
   <text x="58" y="74" class="subtitle">@{escape(USERNAME)} · private-aware · generated from the official GitHub API</text>
 
-{''.join(stat_cards)}
+{language_count_card}
 
-  <rect x="30" y="208" width="840" height="230" rx="12" fill="#0b1320" stroke="#30363d" />
-  <text x="52" y="232" class="section">Language coverage across public + private repositories · top {len(top_languages)}</text>
+  <rect x="30" y="105" width="840" height="230" rx="12" fill="#0b1320" stroke="#30363d" />
+  <text x="52" y="129" class="section">Language coverage across public + private repositories · top {len(top_languages)}</text>
 {''.join(language_rows)}
 
-  <text x="42" y="475" class="section">Core Stack</text>
+  <text x="42" y="375" class="section">Core Stack</text>
 {''.join(stack_chips)}
 </svg>
 """
