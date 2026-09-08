@@ -36,13 +36,17 @@ jobs:
           BRANCH_NAME: main
           AUTO_PUSH: false
           THEME: github_dark
-      - name: Normalize profile joining year
+      - name: Generate joined-year profile card
         shell: bash
         run: |
-          sed -E -i 's/Joined GitHub [^<]+/Joined GitHub in 2025/' profile-summary-card-output/github_dark/0-profile-details.svg
-          grep -q 'Joined GitHub in 2025' profile-summary-card-output/github_dark/0-profile-details.svg
+          mkdir -p assets
+          curl --fail --location --silent --show-error \
+            "https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=${{ github.repository_owner }}&theme=github_dark" \
+            --output assets/profile-details.svg
+          sed -E -i 's/Joined GitHub [^<]+/Joined GitHub in 2025/' assets/profile-details.svg
+          grep -q 'Joined GitHub in 2025' assets/profile-details.svg
       - name: Commit metrics and profile card
         uses: EndBug/add-and-commit@v9
         with:
           message: "Generate GitHub metrics and profile card"
-          add: '["github-metrics.svg", "profile-summary-card-output/github_dark"]'
+          add: '["github-metrics.svg", "assets/profile-details.svg", "profile-summary-card-output/github_dark"]'
