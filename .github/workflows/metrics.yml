@@ -28,26 +28,14 @@ jobs:
           plugin_isocalendar_duration: full-year
           filename: github-metrics.svg
           output_action: none
-      - name: Generate private-aware profile summary cards
-        uses: vn7n24fzkq/github-profile-summary-cards@09ba4dde3f9b05828cb99553561db3f4ff07703f
+      - name: Generate live engineering dashboard
         env:
-          GITHUB_TOKEN: ${{ secrets.METRICS_TOKEN }}
-        with:
-          USERNAME: ${{ github.repository_owner }}
-          BRANCH_NAME: main
-          AUTO_PUSH: false
-          THEME: github_dark
-      - name: Generate joined-year profile card
-        shell: bash
-        run: |
-          mkdir -p assets
-          curl --fail --location --silent --show-error \
-            "https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=${{ github.repository_owner }}&theme=github_dark" \
-            --output assets/profile-details.svg
-          sed -E -i 's/Joined GitHub [^<]+/Joined GitHub in 2025/' assets/profile-details.svg
-          grep -q 'Joined GitHub in 2025' assets/profile-details.svg
-      - name: Commit metrics and profile card
+          DASHBOARD_TOKEN: ${{ secrets.METRICS_TOKEN }}
+          GITHUB_TOKEN: ${{ github.token }}
+          GITHUB_USERNAME: ${{ github.repository_owner }}
+        run: python .github/scripts/generate_live_dashboard.py
+      - name: Commit metrics and live dashboard
         uses: EndBug/add-and-commit@v9
         with:
-          message: "Generate GitHub metrics and profile card"
-          add: '["github-metrics.svg", "assets/profile-details.svg", "profile-summary-card-output/github_dark"]'
+          message: "Refresh GitHub metrics and live engineering dashboard"
+          add: '["github-metrics.svg", "assets/live-engineering-signal.svg"]'

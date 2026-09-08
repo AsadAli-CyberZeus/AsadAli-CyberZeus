@@ -1,0 +1,136 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="620" viewBox="0 0 900 620" role="img" aria-labelledby="title desc">
+  <title id="title">AsadAliEngineer live GitHub engineering signal</title>
+  <desc id="desc">Public repositories, authored commits, last-year contributions, and languages generated from the official GitHub API.</desc>
+  <defs>
+    <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0d1117" />
+      <stop offset="1" stop-color="#0a1220" />
+    </linearGradient>
+    <linearGradient id="activity" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3fb950" stop-opacity="0.72" />
+      <stop offset="1" stop-color="#3fb950" stop-opacity="0.04" />
+    </linearGradient>
+    <style>
+      text { font-family: Inter, "Segoe UI", Arial, sans-serif; }
+      .title { fill: #f0f6fc; font-size: 25px; font-weight: 700; }
+      .subtitle { fill: #8b949e; font-size: 13px; }
+      .section { fill: #f0f6fc; font-size: 17px; font-weight: 650; }
+      .metric { fill: #58a6ff; font-size: 25px; font-weight: 750; }
+      .label { fill: #8b949e; font-size: 10.5px; }
+      .axis { fill: #8b949e; font-size: 10px; }
+      .language { fill: #c9d1d9; font-size: 13px; font-weight: 600; }
+      .percent { fill: #8b949e; font-size: 11px; }
+    </style>
+  </defs>
+  <rect x="1" y="1" width="898" height="618" rx="16" fill="url(#panel)" stroke="#30363d" stroke-width="2" />
+  <circle cx="38" cy="41" r="8" fill="#3fb950" />
+  <text x="58" y="49" class="title">Live Engineering Signal</text>
+  <text x="58" y="74" class="subtitle">@AsadAliEngineer · joined 2025 · refreshed 2026-09-08 from the GitHub API</text>
+
+  <rect x="30" y="101" width="560" height="229" rx="12" fill="#0b1320" stroke="#30363d" />
+  <text x="52" y="130" class="section">Contribution activity · last 52 weeks</text>
+  <line x1="58" y1="275" x2="558" y2="275" stroke="#30363d" />
+  <line x1="58" y1="212.5" x2="558" y2="212.5" stroke="#21262d" />
+  <line x1="58" y1="150" x2="558" y2="150" stroke="#21262d" />
+  <path d="M58.0,202.6 L67.6,231.1 L77.2,222.4 L86.8,207.0 L96.5,215.8 L106.1,239.9 L115.7,222.4 L125.3,207.0 L134.9,204.8 L144.5,209.2 L154.2,200.4 L163.8,200.4 L173.4,202.6 L183.0,224.6 L192.6,218.0 L202.2,178.5 L211.8,226.8 L221.5,207.0 L231.1,237.7 L240.7,209.2 L250.3,220.2 L259.9,191.7 L269.5,218.0 L279.2,213.6 L288.8,196.1 L298.4,209.2 L308.0,196.1 L317.6,211.4 L327.2,207.0 L336.8,198.2 L346.5,207.0 L356.1,193.9 L365.7,207.0 L375.3,233.3 L384.9,222.4 L394.5,209.2 L404.2,185.1 L413.8,231.1 L423.4,222.4 L433.0,176.3 L442.6,180.7 L452.2,209.2 L461.8,191.7 L471.5,213.6 L481.1,196.1 L490.7,167.5 L500.3,250.9 L509.9,222.4 L519.5,150.0 L529.2,163.2 L538.8,226.8 L548.4,215.8 L558.0,213.6 L558.0,275.0 L58.0,275.0 Z" fill="url(#activity)" />
+  <path d="M58.0,202.6 L67.6,231.1 L77.2,222.4 L86.8,207.0 L96.5,215.8 L106.1,239.9 L115.7,222.4 L125.3,207.0 L134.9,204.8 L144.5,209.2 L154.2,200.4 L163.8,200.4 L173.4,202.6 L183.0,224.6 L192.6,218.0 L202.2,178.5 L211.8,226.8 L221.5,207.0 L231.1,237.7 L240.7,209.2 L250.3,220.2 L259.9,191.7 L269.5,218.0 L279.2,213.6 L288.8,196.1 L298.4,209.2 L308.0,196.1 L317.6,211.4 L327.2,207.0 L336.8,198.2 L346.5,207.0 L356.1,193.9 L365.7,207.0 L375.3,233.3 L384.9,222.4 L394.5,209.2 L404.2,185.1 L413.8,231.1 L423.4,222.4 L433.0,176.3 L442.6,180.7 L452.2,209.2 L461.8,191.7 L471.5,213.6 L481.1,196.1 L490.7,167.5 L500.3,250.9 L509.9,222.4 L519.5,150.0 L529.2,163.2 L538.8,226.8 L548.4,215.8 L558.0,213.6" fill="none" stroke="#3fb950" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" />
+  <text x="58" y="304" class="axis">2025-09</text>
+  <text x="558" y="304" text-anchor="end" class="axis">2026-09</text>
+  <text x="558" y="130" text-anchor="end" class="axis">peak 57/week</text>
+
+  
+      <g transform="translate(620 122)">
+        <rect width="116" height="86" rx="10" fill="#0b1320" stroke="#30363d" />
+        <text x="12" y="33" class="metric">16</text>
+        <text x="12" y="59" class="label">Public repositories</text>
+      </g>
+      <g transform="translate(746 122)">
+        <rect width="116" height="86" rx="10" fill="#0b1320" stroke="#30363d" />
+        <text x="12" y="33" class="metric">1.92k</text>
+        <text x="12" y="59" class="label">Default-branch commits</text>
+      </g>
+      <g transform="translate(620 222)">
+        <rect width="116" height="86" rx="10" fill="#0b1320" stroke="#30363d" />
+        <text x="12" y="33" class="metric">1.62k</text>
+        <text x="12" y="59" class="label">Contributions · last year</text>
+      </g>
+      <g transform="translate(746 222)">
+        <rect width="116" height="86" rx="10" fill="#0b1320" stroke="#30363d" />
+        <text x="12" y="33" class="metric">23</text>
+        <text x="12" y="59" class="label">Languages detected</text>
+      </g>
+
+  <rect x="30" y="350" width="840" height="240" rx="12" fill="#0b1320" stroke="#30363d" />
+  <text x="52" y="382" class="section">Languages across owned public repositories · top 10</text>
+  
+      <g transform="translate(52 402)">
+        <circle cx="5" cy="-5" r="5" fill="#DA5B0B" />
+        <text x="18" y="0" class="language">Jupyter Notebook</text>
+        <text x="350" y="0" text-anchor="end" class="percent">64.3%</text>
+        <rect x="18" y="10" width="332" height="7" rx="3.5" fill="#21262d" />
+        <rect x="18" y="10" width="332.0" height="7" rx="3.5" fill="#DA5B0B" />
+      </g>
+      <g transform="translate(52 440)">
+        <circle cx="5" cy="-5" r="5" fill="#3572A5" />
+        <text x="18" y="0" class="language">Python</text>
+        <text x="350" y="0" text-anchor="end" class="percent">10.8%</text>
+        <rect x="18" y="10" width="332" height="7" rx="3.5" fill="#21262d" />
+        <rect x="18" y="10" width="81.1" height="7" rx="3.5" fill="#3572A5" />
+      </g>
+      <g transform="translate(52 478)">
+        <circle cx="5" cy="-5" r="5" fill="#00B4AB" />
+        <text x="18" y="0" class="language">Dart</text>
+        <text x="350" y="0" text-anchor="end" class="percent">7.8%</text>
+        <rect x="18" y="10" width="332" height="7" rx="3.5" fill="#21262d" />
+        <rect x="18" y="10" width="58.3" height="7" rx="3.5" fill="#00B4AB" />
+      </g>
+      <g transform="translate(52 516)">
+        <circle cx="5" cy="-5" r="5" fill="#3178c6" />
+        <text x="18" y="0" class="language">TypeScript</text>
+        <text x="350" y="0" text-anchor="end" class="percent">7.0%</text>
+        <rect x="18" y="10" width="332" height="7" rx="3.5" fill="#21262d" />
+        <rect x="18" y="10" width="52.7" height="7" rx="3.5" fill="#3178c6" />
+      </g>
+      <g transform="translate(52 554)">
+        <circle cx="5" cy="-5" r="5" fill="#f1e05a" />
+        <text x="18" y="0" class="language">JavaScript</text>
+        <text x="350" y="0" text-anchor="end" class="percent">5.3%</text>
+        <rect x="18" y="10" width="332" height="7" rx="3.5" fill="#21262d" />
+        <rect x="18" y="10" width="39.6" height="7" rx="3.5" fill="#f1e05a" />
+      </g>
+      <g transform="translate(462 402)">
+        <circle cx="5" cy="-5" r="5" fill="#89e051" />
+        <text x="18" y="0" class="language">Shell</text>
+        <text x="350" y="0" text-anchor="end" class="percent">1.9%</text>
+        <rect x="18" y="10" width="332" height="7" rx="3.5" fill="#21262d" />
+        <rect x="18" y="10" width="13.9" height="7" rx="3.5" fill="#89e051" />
+      </g>
+      <g transform="translate(462 440)">
+        <circle cx="5" cy="-5" r="5" fill="#3fb950" />
+        <text x="18" y="0" class="language">MDX</text>
+        <text x="350" y="0" text-anchor="end" class="percent">1.2%</text>
+        <rect x="18" y="10" width="332" height="7" rx="3.5" fill="#21262d" />
+        <rect x="18" y="10" width="9.0" height="7" rx="3.5" fill="#3fb950" />
+      </g>
+      <g transform="translate(462 478)">
+        <circle cx="5" cy="-5" r="5" fill="#e34c26" />
+        <text x="18" y="0" class="language">HTML</text>
+        <text x="350" y="0" text-anchor="end" class="percent">0.4%</text>
+        <rect x="18" y="10" width="332" height="7" rx="3.5" fill="#21262d" />
+        <rect x="18" y="10" width="3.0" height="7" rx="3.5" fill="#e34c26" />
+      </g>
+      <g transform="translate(462 516)">
+        <circle cx="5" cy="-5" r="5" fill="#563d7c" />
+        <text x="18" y="0" class="language">CSS</text>
+        <text x="350" y="0" text-anchor="end" class="percent">0.4%</text>
+        <rect x="18" y="10" width="332" height="7" rx="3.5" fill="#21262d" />
+        <rect x="18" y="10" width="3.0" height="7" rx="3.5" fill="#563d7c" />
+      </g>
+      <g transform="translate(462 554)">
+        <circle cx="5" cy="-5" r="5" fill="#f778ba" />
+        <text x="18" y="0" class="language">TeX</text>
+        <text x="350" y="0" text-anchor="end" class="percent">0.2%</text>
+        <rect x="18" y="10" width="332" height="7" rx="3.5" fill="#21262d" />
+        <rect x="18" y="10" width="3.0" height="7" rx="3.5" fill="#f778ba" />
+      </g>
+</svg>
