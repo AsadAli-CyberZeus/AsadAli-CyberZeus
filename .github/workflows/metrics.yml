@@ -16,7 +16,7 @@ jobs:
       - name: Generate metrics
         uses: lowlighter/metrics@latest
         with:
-          token: ${{ secrets.METRICS_TOKEN || secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}
           user: ${{ github.repository_owner }}
           template: classic
           base: header, activity, community, repositories, metadata
@@ -27,17 +27,22 @@ jobs:
           plugin_isocalendar: yes
           plugin_isocalendar_duration: full-year
           filename: github-metrics.svg
-      - name: Generate profile contribution card
+      - name: Generate private-aware profile summary cards
+        uses: vn7n24fzkq/github-profile-summary-cards@09ba4dde3f9b05828cb99553561db3f4ff07703f
+        env:
+          GITHUB_TOKEN: ${{ secrets.METRICS_TOKEN }}
+        with:
+          USERNAME: ${{ github.repository_owner }}
+          BRANCH_NAME: main
+          AUTO_PUSH: false
+          THEME: github_dark
+      - name: Normalize profile joining year
         shell: bash
         run: |
-          mkdir -p assets
-          curl --fail --location --silent --show-error \
-            "https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=${{ github.repository_owner }}&theme=github_dark" \
-            --output assets/profile-details.svg
-          sed -E -i 's/Joined GitHub [^<]+/Joined GitHub in 2025/' assets/profile-details.svg
-          grep -q 'Joined GitHub in 2025' assets/profile-details.svg
+          sed -E -i 's/Joined GitHub [^<]+/Joined GitHub in 2025/' profile-summary-card-output/github_dark/0-profile-details.svg
+          grep -q 'Joined GitHub in 2025' profile-summary-card-output/github_dark/0-profile-details.svg
       - name: Commit metrics and profile card
         uses: EndBug/add-and-commit@v9
         with:
           message: "Generate GitHub metrics and profile card"
-          add: '["github-metrics.svg", "assets/profile-details.svg"]'
+          add: '["github-metrics.svg", "profile-summary-card-output/github_dark"]'

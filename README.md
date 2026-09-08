@@ -175,12 +175,12 @@ I focus on production-grade engineering: systems that are secure by design, obse
 ## 📊 Live Engineering Signal
 
 <div align="center">
-  <img src="./assets/profile-details.svg" alt="Asad Ali GitHub profile details and contribution activity" width="96%" />
+  <img src="./profile-summary-card-output/github_dark/0-profile-details.svg" alt="Asad Ali GitHub profile details and contribution activity" width="96%" />
   <br />
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=AsadAliEngineer&theme=github_dark" alt="Top languages by repository" width="47%" />
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=AsadAliEngineer&theme=github_dark" alt="Top languages by commit" width="47%" />
+  <img src="./profile-summary-card-output/github_dark/1-repos-per-language.svg" alt="Top languages by repository" width="47%" />
+  <img src="./profile-summary-card-output/github_dark/2-most-commit-language.svg" alt="Top languages by commit" width="47%" />
   <br />
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=AsadAliEngineer&theme=github_dark" alt="GitHub contribution statistics" width="47%" />
+  <img src="./profile-summary-card-output/github_dark/3-stats.svg" alt="GitHub contribution statistics" width="47%" />
   <br />
   <img src="https://streak-stats.demolab.com?user=AsadAliEngineer&theme=dark" alt="GitHub contribution streak" width="62%" />
 </div>
