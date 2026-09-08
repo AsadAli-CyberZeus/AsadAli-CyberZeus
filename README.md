@@ -177,8 +177,7 @@ I focus on production-grade engineering: systems that are secure by design, obse
 <div align="center">
   <img src="./assets/profile-details.svg" alt="Asad Ali GitHub profile details and contribution activity" width="96%" />
   <br />
-  <img src="./profile-summary-card-output/github_dark/1-repos-per-language.svg" alt="Top languages by repository" width="47%" />
-  <img src="./profile-summary-card-output/github_dark/2-most-commit-language.svg" alt="Top languages by commit" width="47%" />
+  <img src="./profile-summary-card-output/github_dark/1-repos-per-language.svg" alt="Top languages by repository" width="62%" />
   <br />
   <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=AsadAliEngineer&theme=github_dark" alt="GitHub contribution statistics" width="47%" />
   <br />
